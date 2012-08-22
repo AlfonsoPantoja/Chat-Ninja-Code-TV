@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link href="/styles/style.css" rel="stylesheet">
+<script src="/socket.io/socket.io.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="scripts/scriptPrincipal.js"></script>
+<title>Ninja Code TV - Chat</title>
+</head>
+<body>
+<section id="signup">
+  <div id="setname">
+    <form id="formname">
+      <label for="name">Tu nick:&nbsp</label>
+      <input type="text" name="name" id="name" placeholder="Ingresa tu nombre de usuario" maxlength="10" required />
+      <input type="submit" value="Entrar" id="setNick" class="btn">
+    </form>
+  </div>
+</section>
+<section id="wrapper">
+  <section id="chat">
+    <header>
+      <h1>#ninjacodetv ó @ninjacodetv</h1>
+      <button id="logout" class="btn">Salir</button>
+    </header>
+    <div id="contchat">
+      <div id="chatinsite">
+        <ul id="message">
+            
+        </ul>
+      </div>
+      <form id="formmsg">
+        <input type="text" name="msg" id="msg" placeholder="Tu mensaje aquí" maxlength="140" required />
+        <input type="submit" value="Enviar" id="sendm" class="btn">
+      </form>
+    </div>
+    <aside id="uscon">
+      <h3>En linea</h3>
+        <ul id="users">
+
+        </ul>
+    </aside>
+  </section>
+</section>
+</body>
+</html>
