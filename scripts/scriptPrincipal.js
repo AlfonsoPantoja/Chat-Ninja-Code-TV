@@ -93,7 +93,7 @@ function procesarUsuario(mensaje)
 function procesarMensaje(data)
 {
 	$('#message').append($('<li>').append($('<p>').html('<strong>'+ data[0] + " dice:</strong> " + data[1])));
-	$('#message').animate({scrollTop: $("#message").height()}, 800);
+	$('#message').animate({scrollTop: $("#message")[0].scrollHeight}, 100);
 }
 
 function procesarUsuarios(data)
